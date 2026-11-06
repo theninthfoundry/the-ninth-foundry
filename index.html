@@ -1,101 +1,279 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>The Ninth Foundry — An Archive of Becoming</title>
-<meta name="description" content="Sreeshanth Namireddy — independent builder. Software, AI and experimental systems.">
+<meta name="description" content="Sreeshanth Namireddy — Independent builder. Engineering intelligent systems, software verification architectures, and experimental machines.">
+<meta name="theme-color" content="#111110">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 84'><path fill='%23C83D32' fill-rule='evenodd' d='M0 0H44V84H32V52H12V84H0ZM12 12V40H32V12Z'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/sections.css">
-</head><body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="disp" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".01 .035" numOctaves="2" seed="4" result="n"/><feDisplacementMap id="dm" in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
-<div id="prog"></div><div id="cur" class="mono" aria-hidden="true"></div>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="disp" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency=".01 .035" numOctaves="2" seed="4" result="n"/>
+    <feDisplacementMap id="dm" in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+<div id="prog"></div>
+<div id="cur" class="mono" aria-hidden="true"></div>
 
-<!-- INTRO: dark plate with a logo-shaped hole that scales up to reveal the hero -->
+<!-- 00 — OPENING: Vector mark assembly & iris-expansion reveal -->
 <div id="intro" role="presentation">
- <svg id="isvg" width="100%" height="100%"><defs><mask id="im" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect width="100%" height="100%" fill="#fff"/><path id="hole" fill="#000" fill-rule="evenodd" d="M0 0H44V84H32V52H12V84H0ZM12 12V40H32V12Z"/></mask></defs>
-  <rect width="100%" height="100%" fill="#111110" mask="url(#im)"/>
-  <path id="lstroke" pathLength="1" fill="none" stroke="#F8F7F3" stroke-width="1.6" stroke-dasharray="1" d="M0 0H44V84H32V52H12V84H0ZM12 12V40H32V12Z"/>
-  <circle id="iring" r="62" fill="none" stroke="#C83D32" stroke-width="1" stroke-dasharray="2 14"/></svg>
- <div class="iw"><div class="iname"><b>The Ninth Foundry</b><i class="mono">Sreeshanth Namireddy</i></div><div class="iline"></div></div>
- <div class="ib mono"><span>An independent digital archive</span><span>Initializing — 009 · <span id="ipct">0</span>%</span></div>
- <button id="skip" class="mono">Skip ↗</button>
+  <svg id="isvg" width="100%" height="100%">
+    <defs>
+      <mask id="im" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
+        <rect width="100%" height="100%" fill="#fff"/>
+        <path id="hole" fill="#000" fill-rule="evenodd" d="M0 0H44V84H32V52H12V84H0ZM12 12V40H32V12Z"/>
+      </mask>
+    </defs>
+    <rect width="100%" height="100%" fill="#111110" mask="url(#im)"/>
+    <path id="lstroke" pathLength="1" fill="none" stroke="#F8F7F3" stroke-width="1.6" stroke-dasharray="1" d="M0 0H44V84H32V52H12V84H0ZM12 12V40H32V12Z"/>
+    <circle id="iring" r="62" fill="none" stroke="#C83D32" stroke-width="1" stroke-dasharray="2 14"/>
+  </svg>
+  <div class="iw">
+    <div class="iname">
+      <b>The Ninth Foundry</b>
+      <i class="mono">Sreeshanth Namireddy</i>
+    </div>
+    <div class="iline"></div>
+  </div>
+  <div class="ib mono">
+    <span>An independent digital archive</span>
+    <span>The Ninth Foundry · Hyderabad</span>
+  </div>
+  <button id="skip" class="mono" aria-label="Skip introduction">Skip ↗</button>
 </div>
 
-<header id="hd"><a href="#hero" class="mono">The Ninth Foundry</a>
- <nav class="mono" aria-label="Primary"><a class="nl" href="#hero">Home</a><a class="nl" href="#work">Work</a><a class="nl" href="#collection">Collection</a><a class="nl" href="#person">Personality</a></nav>
- <div class="mono"><span class="av"></span><a class="nl" href="#contact" data-mag>Let’s talk ↗</a></div>
- <button id="burger" class="mono" aria-expanded="false" aria-controls="menu">Menu</button></header>
+<!-- GLOBAL HEADER -->
+<header id="hd">
+  <a href="#hero" class="mono">The Ninth Foundry</a>
+  <nav class="mono" aria-label="Primary">
+    <a class="nl" href="#hero">Home</a>
+    <a class="nl" href="#work">Work</a>
+    <a class="nl" href="#archive">Index</a>
+    <a class="nl" href="#workbench">Workbench</a>
+    <a class="nl" href="#collection">Collection</a>
+    <a class="nl" href="#person">Human</a>
+  </nav>
+  <div class="mono">
+    <span class="av"></span>
+    <a class="nl" href="#contact" data-mag>Let’s talk ↗</a>
+  </div>
+  <button id="burger" class="mono" aria-expanded="false" aria-controls="menu">Menu</button>
+</header>
 <div id="menu" role="dialog" aria-label="Menu"></div>
+
+<!-- FIXED HUD TELEMETRY -->
 <div class="fi mono" id="fl">Nº 009 · Position / <span id="pc">0</span>%</div>
-<div class="fi mono" id="fr"><span id="lbl">System / Opening</span><button id="ix" aria-expanded="false">Index +</button></div>
+<div class="fi mono" id="fr">
+  <span id="lbl">System / Opening</span>
+  <button id="ix" aria-expanded="false" aria-controls="index">Index +</button>
+</div>
 <nav id="index" class="mono" aria-label="Archive index"></nav>
 
 <main>
-<section id="hero" data-l="Home" class="dk">
- <div class="hero-meta mono"><span>Independent builder<br><em>Software / AI / Experimental systems</em></span><span class="r">Hyderabad, India<br><em id="co">X 0.00 · Y 0.00</em></span></div>
- <figure class="portrait" data-parallax-mouse><div class="art mono" data-ph="Hero portrait 4:5 — assets/images/portrait/hero.jpg"><img src="assets/images/portrait/hero.jpg" alt="Portrait of Sreeshanth Namireddy" onerror="this.remove()"></div>
-  <span class="anno a1 mono">Fig. 01 — Subject</span><span class="anno a2 mono">+</span></figure>
- <h1 class="hero-name"><span class="ln"><span class="split">Sreeshanth</span></span><span class="ln"><span class="split o">Namireddy.</span></span></h1>
- <div class="hero-rule"></div>
- <p class="hero-sub">I build things at the intersection of technology, imagination and the unknown.</p>
- <div class="hero-foot mono"><span>Scroll to explore ↓</span><span>An archive of becoming</span><span>01 / 10</span></div>
-</section>
+  <!-- 01 — THE HERO -->
+  <section id="hero" data-l="Home" class="dk">
+    <div class="hero-meta mono">
+      <span>Independent builder<br><em>Software / AI / Experimental systems</em></span>
+      <span class="r">Hyderabad, India<br><em id="co">X 0.00 · Y 0.00</em></span>
+    </div>
+    <figure class="portrait" data-parallax-mouse>
+      <div class="art mono" data-ph="Hero portrait 4:5 — assets/images/portrait/hero.jpg">
+        <img src="assets/images/portrait/hero.jpg" alt="Portrait of Sreeshanth Namireddy" onerror="this.remove()">
+      </div>
+      <span class="anno a1 mono">Fig. 01 — Subject</span>
+      <span class="anno a2 mono">+</span>
+    </figure>
+    <h1 class="hero-name">
+      <span class="ln"><span class="split">Sreeshanth</span></span>
+      <span class="ln"><span class="split o">Namireddy.</span></span>
+    </h1>
+    <div class="hero-rule"></div>
+    <p class="hero-sub">Engineering intelligent systems, software verification architectures, and experimental machines.</p>
+    <div class="hero-foot mono">
+      <span>Scroll to explore ↓</span>
+      <span>An archive of becoming</span>
+      <span>01 / 07</span>
+    </div>
+  </section>
 
-<div class="mq dk" aria-hidden="true"><div class="tr mono-s">Software — Intelligent systems — Experiments — Machines — Software — Intelligent systems — Experiments — Machines —</div></div>
+  <!-- KINETIC MARQUEE -->
+  <div class="mq dk" aria-hidden="true">
+    <div class="tr mono-s">INTELLIGENT SYSTEMS — SOFTWARE VERIFICATION — EXPERIMENTAL MACHINES — AUTONOMOUS AGENTS — INTELLIGENT SYSTEMS — SOFTWARE VERIFICATION —</div>
+  </div>
 
-<section id="manifesto" data-l="Manifesto" class="sec">
- <i class="vl"></i><div class="wrap"><div class="idx mono">01 — A way of thinking</div>
- <div class="g12"><h2 class="h2 rl man-h"><span class="ln"><span>Not everything</span></span><span class="ln"><span>needs to exist.</span></span><span class="ln"><span>Until someone</span></span><span class="ln"><span><i>decides to build it.</i></span></span></h2>
- <div class="man-t rv"><p>The Ninth Foundry is an independent archive of ideas, experiments and things brought into existence.</p><p>An exploration of technology, intelligent systems, engineering and the spaces between imagination and implementation.</p><p>Some things become products. Some become experiments. Others remain questions worth pursuing.</p><p>The common thread is curiosity — and the desire to understand how things work, challenge how they are built and discover what else they could become.</p>
- <div class="art frag" data-ph="Fragment 3:2 — assets/images/editorial/fragment.jpg"><img loading="lazy" src="assets/images/editorial/fragment.jpg" alt="" onerror="this.remove()"></div></div></div></div></section>
+  <!-- MANIFESTO PHILOSOPHY -->
+  <section id="manifesto" data-l="Manifesto" class="sec">
+    <i class="vl"></i>
+    <div class="wrap">
+      <div class="idx mono">01 — A way of thinking</div>
+      <div class="g12">
+        <h2 class="h2 rl man-h">
+          <span class="ln"><span>Not everything</span></span>
+          <span class="ln"><span>needs to exist.</span></span>
+          <span class="ln"><span>Until someone</span></span>
+          <span class="ln"><span><i>decides to build it.</i></span></span>
+        </h2>
+        <div class="man-t rv">
+          <p>The Ninth Foundry is an independent archive of ideas, experiments and things brought into existence.</p>
+          <p>An exploration of technology, intelligent systems, engineering and the spaces between imagination and implementation.</p>
+          <p>Some things become products. Some become experiments. Others remain questions worth pursuing.</p>
+          <p>The common thread is curiosity — and the desire to understand how things work, challenge how they are built and discover what else they could become.</p>
+          <div class="art frag" data-ph="Fragment 3:2 — assets/images/editorial/fragment.jpg">
+            <img loading="lazy" src="assets/images/editorial/fragment.jpg" alt="Engineering fragment" onerror="this.remove()">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="work" data-l="Selected Work" class="sec lt"><div class="wrap">
- <div class="idx mono">02 — Selected work</div>
- <h2 class="h2 rl"><span class="ln"><span>Things that moved from</span></span><span class="ln"><span>an idea into <i>a system.</i></span></span></h2>
- <div id="wk" class="wk"></div></div></section>
+  <!-- 02 — SELECTED WORK (4 Curated Flagship Systems) -->
+  <section id="work" data-l="Selected Work" class="sec lt">
+    <div class="wrap">
+      <div class="idx mono">02 — Selected work</div>
+      <h2 class="h2 rl">
+        <span class="ln"><span>Things that moved from</span></span>
+        <span class="ln"><span>an idea into <i>a system.</i></span></span>
+      </h2>
+      <div id="wk" class="wk"></div>
+    </div>
+  </section>
 
-<section id="archive" data-l="The Archive" class="sec lt" style="padding-top:0"><div class="wrap">
- <div class="idx mono">03 — The archive</div>
- <h2 class="h2 rl" style="margin-bottom:64px"><span class="ln"><span>Everything I’ve</span></span><span class="ln"><span>been building.</span></span></h2>
- <div id="rows"></div></div><div id="pv" class="art" data-ph=""><img alt="" src="" onerror="this.style.display='none'"></div></section>
+  <!-- 03 — THE INDEX (Secondary Catalog — Zero Duplication) -->
+  <section id="archive" data-l="The Index" class="sec lt" style="padding-top:0">
+    <div class="wrap">
+      <div class="idx mono">03 — The index</div>
+      <h2 class="h2 rl" style="margin-bottom:64px">
+        <span class="ln"><span>Secondary systems,</span></span>
+        <span class="ln"><span>tools &amp; investigations.</span></span>
+      </h2>
+      <div id="rows"></div>
+    </div>
+    <div id="pv" class="art" data-ph="">
+      <img alt="" src="" onerror="this.style.display='none'">
+    </div>
+  </section>
 
-<section id="lab" data-l="Laboratory" class="sec dk"><div class="wrap">
- <div class="idx mono">04 — The laboratory</div>
- <h2 class="h2 rl"><span class="ln"><span>A place for things</span></span><span class="ln"><span>still <i>becoming.</i></span></span></h2><div id="labg" class="lab"></div></div></section>
+  <!-- 04 — THE WORKBENCH (Concrete Experiments & Investigations) -->
+  <section id="workbench" data-l="The Workbench" class="sec dk">
+    <div class="wrap">
+      <div class="idx mono">04 — The workbench</div>
+      <h2 class="h2 rl">
+        <span class="ln"><span>Systems, prototypes</span></span>
+        <span class="ln"><span>&amp; <i>active explorations.</i></span></span>
+      </h2>
+      <div id="workg" class="lab"></div>
+    </div>
+  </section>
 
-<section id="collection" data-l="Collection" class="sec lt"><div class="wrap">
- <div class="idx mono">05 — Objects, influences &amp; obsessions</div>
- <h2 class="h2 rl"><span class="ln"><span>Not everything worth keeping</span></span><span class="ln"><span>becomes <i>a project.</i></span></span></h2>
- <div id="colg" class="col"></div>
- <div class="track" id="track"><div class="tk" data-at="0">A · Machines</div><div class="tk" data-at=".33">B · Visual culture</div><div class="tk" data-at=".66">C · Objects</div><div class="tk" data-at="1">D · Curiosities</div>
- <div id="wheel" aria-hidden="true"><svg viewBox="0 0 200 200"><g id="wg" fill="none" stroke="currentColor">
-  <circle cx="100" cy="100" r="98" stroke-width="5"/><circle cx="100" cy="100" r="82" stroke-width="1" stroke-dasharray="7 3.2"/><circle cx="100" cy="100" r="66" stroke-width="2"/><circle cx="100" cy="100" r="60" stroke-width=".6"/>
-  <path stroke-width="3" d="M100 60V12M100 140v48M60 100H12M140 100h48M71.7 71.7L38 38M128.3 128.3L162 162M128.3 71.7L162 38M71.7 128.3L38 162"/>
-  <circle cx="100" cy="100" r="22" stroke-width="2"/><circle cx="100" cy="100" r="6" stroke-width="1.4"/>
-  <g stroke-width="1.4"><circle cx="100" cy="82" r="2.6"/><circle cx="117" cy="94" r="2.6"/><circle cx="110.5" cy="114" r="2.6"/><circle cx="89.5" cy="114" r="2.6"/><circle cx="83" cy="94" r="2.6"/></g><circle cx="100" cy="9" r="2.4" fill="#C83D32" stroke="none"/></g></svg>
-  <span class="wl mono" data-p="0">Tread</span><span class="wl mono" data-p=".4">Rim</span><span class="wl mono" data-p=".75">Hub</span></div></div></div></section>
+  <!-- 05 — THE COLLECTION & KINEMATIC WHEEL -->
+  <section id="collection" data-l="The Collection" class="sec lt">
+    <div class="wrap">
+      <div class="idx mono">05 — Objects, influences &amp; obsessions</div>
+      <h2 class="h2 rl">
+        <span class="ln"><span>Not everything worth keeping</span></span>
+        <span class="ln"><span>becomes <i>a system.</i></span></span>
+      </h2>
+      <div id="colg" class="col"></div>
+      <div class="track" id="track">
+        <div class="tk" data-at="0">A · Machines</div>
+        <div class="tk" data-at=".33">B · Visual culture</div>
+        <div class="tk" data-at=".66">C · Objects</div>
+        <div class="tk" data-at="1">D · Curiosities</div>
+        <div id="wheel" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <g id="wg" fill="none" stroke="currentColor">
+              <circle cx="100" cy="100" r="98" stroke-width="5"/>
+              <circle cx="100" cy="100" r="82" stroke-width="1" stroke-dasharray="7 3.2"/>
+              <circle cx="100" cy="100" r="66" stroke-width="2"/>
+              <circle cx="100" cy="100" r="60" stroke-width=".6"/>
+              <path stroke-width="3" d="M100 60V12M100 140v48M60 100H12M140 100h48M71.7 71.7L38 38M128.3 128.3L162 162M128.3 71.7L162 38M71.7 128.3L38 162"/>
+              <circle cx="100" cy="100" r="22" stroke-width="2"/>
+              <circle cx="100" cy="100" r="6" stroke-width="1.4"/>
+              <g stroke-width="1.4">
+                <circle cx="100" cy="82" r="2.6"/>
+                <circle cx="117" cy="94" r="2.6"/>
+                <circle cx="110.5" cy="114" r="2.6"/>
+                <circle cx="89.5" cy="114" r="2.6"/>
+                <circle cx="83" cy="94" r="2.6"/>
+              </g>
+              <circle cx="100" cy="9" r="2.4" fill="#C83D32" stroke="none"/>
+            </g>
+          </svg>
+          <span class="wl mono" data-p="0">Tread</span>
+          <span class="wl mono" data-p=".4">Rim</span>
+          <span class="wl mono" data-p=".75">Hub</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="person" data-l="Personality" class="sec dk"><div class="wrap">
- <div class="idx mono">06 — The human behind the systems</div>
- <h2 class="h2 rl"><span class="ln"><span>Curious by default.</span></span><span class="ln"><span>A builder <i>by instinct.</i></span></span></h2>
- <div class="g12 per"><figure class="pt"><div class="art" data-ph="Portrait 4:5 — assets/images/portrait/personality.jpg"><img loading="lazy" src="assets/images/portrait/personality.jpg" alt="Sreeshanth Namireddy" onerror="this.remove()"></div><span class="anno a1 mono">Fig. 02 — Observer</span></figure>
- <div class="tx rv"><p>I’m Sreeshanth Namireddy, a software engineering student and independent builder interested in the systems shaping what comes next.</p><p>My work moves across software engineering, artificial intelligence, intelligent systems and experimental product development.</p><p>I’m particularly interested in understanding how things work beneath the surface — from the architecture of software systems to the behaviour of intelligent machines.</p><p>Outside the technical world, I’m drawn to automobiles, motorsports, visual culture and design.</p><p>The Ninth Foundry is a record of that curiosity: the things I build, the ideas I explore and the questions that keep me moving.</p></div></div>
- <div class="five"><span>Build</span><span>Explore</span><span>Question</span><span>Experiment</span><span>Repeat</span></div></div></section>
+  <!-- 06 — THE HUMAN RECORD -->
+  <section id="person" data-l="The Human Record" class="sec dk">
+    <div class="wrap">
+      <div class="idx mono">06 — The human record</div>
+      <h2 class="h2 rl">
+        <span class="ln"><span>Curious by default.</span></span>
+        <span class="ln"><span>A builder <i>by instinct.</i></span></span>
+      </h2>
+      <div class="g12 per">
+        <figure class="pt">
+          <div class="art" data-ph="Portrait 4:5 — assets/images/portrait/personality.jpg">
+            <img loading="lazy" src="assets/images/portrait/personality.jpg" alt="Sreeshanth Namireddy" onerror="this.remove()">
+          </div>
+          <span class="anno a1 mono">Fig. 02 — Observer</span>
+        </figure>
+        <div class="tx rv">
+          <p>I’m Sreeshanth Namireddy, a software engineer and independent builder exploring the architecture of autonomous and intelligent systems.</p>
+          <p>My work moves across software engineering, artificial intelligence, behavioral systems verification, and experimental product development.</p>
+          <p>I examine how complex systems behave beneath the surface — from the deterministic execution of software architectures to the safety boundaries of autonomous agents.</p>
+          <p>Outside of software, I am deeply drawn to automobiles, motorsports engineering, visual culture, and precision industrial design. The mechanical discipline of high-tolerance machinery strongly informs my standard for software reliability.</p>
+          <p>The Ninth Foundry is a living record of that curiosity: the systems I build, the questions I investigate, and the ideas brought into existence.</p>
+        </div>
+      </div>
+      <div class="five">
+        <span>Build</span>
+        <span>Explore</span>
+        <span>Question</span>
+        <span>Experiment</span>
+        <span>Repeat</span>
+      </div>
+    </div>
+  </section>
 
-<section id="journal" data-l="Field Notes" class="sec lt"><div class="wrap">
- <div class="idx mono">07 — Field notes</div>
- <h2 class="h2 rl"><span class="ln"><span>Thoughts, discoveries,</span></span><span class="ln"><span>things worth documenting.</span></span></h2>
- <p class="mono mute" style="margin:24px 0 56px">Proposed subjects — unpublished until real articles exist</p><div id="jr"></div></div></section>
-
-<section id="contact" data-l="Contact" class="sec dk"><div class="wrap">
- <h2 class="h2 big rl"><span class="ln"><span>Have something</span></span><span class="ln"><span>interesting</span></span><span class="ln"><span>in mind<i>?</i></span></span></h2>
- <p class="rv mute" style="margin-top:32px">Let’s make something that shouldn’t exist yet.</p>
- <span class="em" data-mag>[ verified email — add in js/data.js ]</span>
- <div class="soc mono" id="soc"></div><div class="road"><i></i></div></div></section>
+  <!-- 07 — TRANSMISSION (Verified Contact & Colophon) -->
+  <section id="contact" data-l="Transmission" class="sec dk">
+    <div class="wrap">
+      <h2 class="h2 big rl">
+        <span class="ln"><span>Have something</span></span>
+        <span class="ln"><span>interesting</span></span>
+        <span class="ln"><span>in mind<i>?</i></span></span>
+      </h2>
+      <p class="rv mute" style="margin-top:32px">Let’s make something that shouldn't exist yet.</p>
+      <div class="em-wrap">
+        <a class="em" data-mag href="mailto:namireddysreeshanth@gmail.com">namireddysreeshanth@gmail.com</a>
+      </div>
+      <div class="soc mono" id="soc"></div>
+      <div class="road"><i></i></div>
+    </div>
+  </section>
 </main>
-<footer class="mono dk"><span>The Ninth Foundry<br>An archive of becoming.</span><span>Independently built. Continuously evolving.</span><span>© 2026 · <a href="#hero" data-mag style="text-decoration:underline">Back to top ↑</a></span></footer>
+
+<footer class="mono dk">
+  <span>The Ninth Foundry<br>An archive of becoming.</span>
+  <span>Independently built. Continuously evolving.</span>
+  <span>© 2026 · <a href="#hero" data-mag style="text-decoration:underline">Back to top ↑</a></span>
+</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="js/data.js"></script><script src="js/main.js"></script><script src="js/motion.js"></script>
-</body></html>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/motion.js"></script>
+</body>
+</html>
