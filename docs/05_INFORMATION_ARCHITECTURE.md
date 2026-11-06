@@ -1,153 +1,137 @@
 # THE NINTH FOUNDRY — INFORMATION ARCHITECTURE
 **Document ID:** `DOC-05-IA`  
-**Date:** November 2026  
+**Date:** November 2026 (Updated Phase 02.5)  
 **Auditor:** Principal Creative Director & Information Architect  
-**Scope:** Complete structural, navigational, and content blueprint for the refined 7-stage experience.
+**Scope:** Standardized 8-Stage Archival Exhibition Blueprint (Stages 00–07)  
+**Core Doctrine:** *Phase 02.5 — Controlled Imperfection & Progressive Revelation*
 
 ---
 
 ## 1. Global Navigation & Information Model
 
-The refined architecture eliminates the dead-end loops and duplicated content identified in the Phase 01 audit. The website is structured as a continuous 7-section exhibition, accessible via both linear vertical scroll and non-linear modal navigation.
+The Ninth Foundry completely eliminates cyclical loops and duplicate entries. It is structured as an 8-stage chronological and spatial exhibition (Stages 00 through 07):
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│ 00 · APERTURE INTRO  │ 1.1s Vector Aperture Reveal · Monolith Logo · Iris    │
-├──────────────────────┼──────────────────────────────────────────────────────┤
-│ 01 · THE HERO        │ Sreeshanth Namireddy · 4:5 Portrait · Telemetry       │
-├──────────────────────┼──────────────────────────────────────────────────────┤
-│ 02 · SELECTED WORK   │ 4 Curated Case Files (Veri.fy, Overcharge, Veil, Sat) │
-├──────────────────────┼──────────────────────────────────────────────────────┤
-│ 03 · THE INDEX       │ Complete Archive Catalog (Zero Duplication)          │
-├──────────────────────┼──────────────────────────────────────────────────────┤
-│ 04 · THE WORKBENCH   │ Real Engineering Investigations & Schemas            │
-├──────────────────────┼──────────────────────────────────────────────────────┤
-│ 05 · THE COLLECTION  │ Machines, Visual Culture, Objects · Kinematic Wheel  │
-├──────────────────────┼──────────────────────────────────────────────────────┤
-│ 06 · THE HUMAN       │ The Builder Behind the Systems · Monolithic Five      │
-├──────────────────────┼──────────────────────────────────────────────────────┤
-│ 07 · TRANSMISSION    │ Verified Contact Channels · Laser Road Continuous Orb │
-└──────────────────────┴──────────────────────────────────────────────────────┘
+│ 00 · THE APERTURE SEQUENCE │ 1.1s Vector Aperture Reveal · Monolith · Iris  │
+├────────────────────────────┼────────────────────────────────────────────────┤
+│ 01 · THE HERO              │ The Human Fragment · Monumental Bleed · Portrait│
+├────────────────────────────┼────────────────────────────────────────────────┤
+│ 02 · SELECTED WORK         │ 4 Bespoke Architectural Case Files             │
+├────────────────────────────┼────────────────────────────────────────────────┤
+│ 03 · THE INDEX             │ Archival Register (5 Secondary Systems · No Dup)│
+├────────────────────────────┼────────────────────────────────────────────────┤
+│ 04 · THE WORKBENCH         │ Diagnostic Bento · Calibrated Blueprint SVG    │
+├────────────────────────────┼────────────────────────────────────────────────┤
+│ 05 · THE COLLECTION        │ Asymmetrical Visual Scrapbook · Kinematic Wheel │
+├────────────────────────────┼────────────────────────────────────────────────┤
+│ 06 · THE HUMAN             │ Editorial Monograph · Monolithic Five Ribbon   │
+├────────────────────────────┼────────────────────────────────────────────────┤
+│ 07 · TRANSMISSION          │ The End · Laser Horizon · Verified Channels     │
+└────────────────────────────┴────────────────────────────────────────────────┘
 ```
 
-> **Editorial Note on Field Notes / Journal:**  
-> In accordance with the authenticity mandate, the unwritten Field Notes section is deferred until genuine published essays exist. This eliminates the public "Unpublished" label and keeps the portfolio 100% credible.
+> **Editorial Policy on Field Notes:**  
+> In accordance with the authenticity doctrine, the unwritten Field Notes section is deferred until genuine published essays exist. This eliminates the public "Unpublished" label and keeps the portfolio 100% credible.
 
 ---
 
-## 2. Detailed Section Blueprint
+## 2. Standardized 8-Stage Exhibition Blueprint
 
-### Section 00 — The Opening Sequence
+### Stage 00 — The Aperture Sequence (`#opening`)
 - **Canvas:** Foundry Black (`#111110`).
-- **Duration:** 1.1s target execution.
+- **Target Duration:** 1.1 seconds total. Zero fake percentage tickers.
 - **Components:**
-  - Geometric monolithic "N" SVG mark (`#lstroke`).
-  - Vermilion orbit dial (`#iring`).
+  - Geometric monolithic "N" SVG mark (`#lstroke`) drawn with dynamic stroke-dashoffset (0.7s).
+  - Crimson orbital dashed ring (`#iring`) rotating at high angular velocity.
   - Wordmark: `THE NINTH FOUNDRY` / `SREESHANTH NAMIREDDY`.
-  - Accessible Skip button (`#skip`).
-- **Transition:** Rapid vector stroke draw (0.8s) followed immediately by an iris-style mask aperture expansion (`scale: 110`) that seamlessly reveals the hero. Zero simulated percentage counters.
+  - Accessible Skip trigger (`#skip`).
+- **Transition:** As the vector contour completes, the internal negative space of the monolith glyph expands exponentially (`scale: 110`) as an SVG clip mask, physically tearing open from the inside out to unveil Stage 01.
 
-### Section 01 — The Hero
+### Stage 01 — The Hero: The Human Fragment (`#hero`)
 - **Canvas:** Foundry Black (`#111110`), `min-height: 100svh`.
-- **Top Bar (`#hd`):**
-  - Left: `THE NINTH FOUNDRY`
-  - Center: `HOME`, `WORK`, `INDEX`, `COLLECTION`, `HUMAN`
-  - Right: `LET'S TALK ↗` with pulsing emerald beacon (`#B9C77A`)
-- **Metadata Bar:**
-  - Left: `INDEPENDENT BUILDER / SOFTWARE / AI / EXPERIMENTAL SYSTEMS`
-  - Right: `HYDERABAD, INDIA / X 0.00 · Y 0.00`
-- **Main Typography:**
-  - `SREESHANTH` (Z-index: 0, behind portrait)
-  - `NAMIREDDY.` (Z-index: 2, in front of portrait with `mix-blend-mode: difference`)
-- **Positioning Statement:**
-  - *"Engineering intelligent systems, software verification architectures, and experimental machines."*
-- **Hero Image:**
-  - Right-anchored 4:5 monochrome portrait of Sreeshanth Namireddy.
-  - Flanked by `Fig. 01 — Subject` annotation and red crosshair `+`.
+- **Composition & Asymmetry:**
+  - *Level 1 Minimal Text:* No paragraphs, no skill clouds, no self-aggrandizing prose.
+  - *Typography as Object:* `SREESHANTH` anchored baseline left ($z = 0$), `NAMIREDDY.` anchored baseline right bleeding off-screen ($z = 2$, `mix-blend-mode: difference`).
+  - *Portrait Sandwich:* Off-center 4:5 monochrome portrait ($z = 1$) physically placed between first and last name.
+  - *Telemetry:* `X 0.00 · Y 0.00 · 17°23'N 78°28'E`, `FIG. 01 — SUBJECT / FOUNDRY MONOLITH`.
+  - *Single Positioning Line:* *"Engineering autonomous software, high-integrity systems, and the mechanical kinetics of becoming."*
+- **Persistent HUD (`#hd`):**
+  - Top Left: `THE NINTH FOUNDRY / SREESHANTH NAMIREDDY`
+  - Center: Nav links (`WORK`, `INDEX`, `WORKBENCH`, `COLLECTION`, `HUMAN`, `CONTACT`)
+  - Top Right: `namireddysreeshanth@gmail.com` with pulsing Laboratory Green beacon (`#B9C77A`).
 
-### Interlude — The Kinetic Marquee
-- Single-line structural ribbon (`border-block: 1px solid #343431`).
-- Typography: Outline serif at 7vw (`-webkit-text-stroke: 1px #92918B`).
-- Content: `INTELLIGENT SYSTEMS — SOFTWARE VERIFICATION — EXPERIMENTAL MACHINES — AUTONOMOUS AGENTS —`
-
-### Section 02 — Selected Work (4 Curated Case Files)
+### Stage 02 — Selected Work: The Project Objects (`#work`)
 - **Canvas:** Archive Paper (`#EAE7DF`).
-- **Heading:** `01 — SELECTED WORK` / *"Things that moved from an idea into an engineered system."*
-- **Curated Projects:**
+- **Heading:** `02 — SELECTED WORK` / *"Things that moved from an idea into an engineered system."*
+- **Four Bespoke Architectural Layouts (Zero Uniform Cards):**
   1. **001 · Veri.fy:**
-     - *Focus:* AI Systems / Software Verification
-     - *Layout:* 21:9 Ultra-wide full-width feature.
-     - *Copy:* A behavioural verification architecture exploring how changes in AI-generated software can be inspected, compared, and validated.
-     - *Destination:* Verified GitHub repository / Case File modal.
+     - *Layout:* Panoramic 21:9 ultra-wide plate spanning full grid width.
+     - *Technical Thesis:* Behavioural verification architecture for inspecting, comparing, and validating AST diffs in AI-generated software.
+     - *Destination:* Verified GitHub repository (`target="_blank"`).
   2. **002 · Overcharge Desk:**
-     - *Focus:* Financial Systems / Evidence
-     - *Layout:* Asymmetric split (5 cols 4:5 image / 5 cols editorial copy).
-     - *Copy:* An evidence-driven investigation workflow for identifying, documenting, and resolving potential financial overcharges.
-     - *Destination:* Verified repository / Case File modal.
+     - *Layout:* Asymmetric split (5fr document plate / 1fr void / 5fr editorial audit copy).
+     - *Technical Thesis:* Evidence-driven financial audit workflow identifying and disputing transactional anomalies.
+     - *Destination:* Verified repository (`target="_blank"`).
   3. **003 · Veil:**
-     - *Focus:* AI Agents / Browser Security
-     - *Layout:* Full-bleed breakout dark frame (16:8 ratio).
-     - *Copy:* An experimental browser-agent perception and safety system designed to examine browser interactions and potential information leakage.
-     - *Destination:* Verified repository / Case File modal.
+     - *Layout:* Full-bleed breakout dark frame (16:8 ratio) with negative margins.
+     - *Technical Thesis:* Experimental browser-agent perception and safety system detecting DOM prompt injection and data leaks.
+     - *Destination:* Verified repository (`target="_blank"`).
   4. **004 · SatQuery:**
-     - *Focus:* GEOINT / Satellite Intelligence
-     - *Layout:* Asymmetric right-aligned landscape (16:10 ratio).
-     - *Copy:* An AI-assisted satellite intelligence project exploring geospatial information and multi-spectral change detection.
-     - *Destination:* Verified repository / Case File modal.
+     - *Layout:* Asymmetric right-aligned landscape (16:10 ratio) anchored across columns 3–12.
+     - *Technical Thesis:* Geospatial intelligence query interface utilizing multi-spectral satellite imagery and change detection.
+     - *Destination:* Verified repository (`target="_blank"`).
 
-### Section 03 — The Index (Comprehensive Archive)
+### Stage 03 — The Index: Archival Register (`#archive`)
 - **Canvas:** Archive Paper (`#EAE7DF`).
-- **Heading:** `02 — THE ARCHIVE` / *"Complete inventory of secondary systems, tools & investigations."*
-- **Rule:** **Zero duplication.** Excludes the 4 featured works; showcases the remaining active systems:
-  - `005 · BHOW` (Identity / Canine Reunification Registry · 2025 · Active Prototype)
-  - `006 · Dreaming Machine` (Creative Technology / Generative Canvas · 2026 · Experimental)
+- **Heading:** `03 — THE INDEX` / *"Complete inventory of secondary systems, tools & investigations."*
+- **Rule:** **Zero duplication.** Shows the 5 secondary systems with zero overlap with Selected Work:
+  - `005 · BHOW` (Physical Computing / Canine Reunification Registry · 2025 · Active Prototype)
+  - `006 · Dreaming Machine` (Creative Tech / Generative Canvas · 2026 · Experimental)
   - `007 · Raksha AI` (Cybersecurity / Threat Detection System · 2025 · Research)
   - `008 · CampusBite` (Product Engineering / Real-time Ordering · 2024 · Deployed)
   - `009 · Ride Registry` (Database Systems / Fleet Management · 2024 · Open Source)
-- **Interaction:** Floating preview card (`#pv`) tracks cursor on hover, showing preview graphic with boundary clamping. Clicking opens verified external repository.
+- **Interaction:** Floating preview plate (`#pv`) tracks cursor with viewport clamping. Hovering expands row padding and stains text Signal Red. Direct link opens external repo.
 
-### Section 04 — The Workbench (formerly Laboratory)
+### Stage 04 — The Workbench: The Experimental Space (`#workbench`)
 - **Canvas:** Foundry Black (`#111110`).
-- **Heading:** `03 — THE WORKBENCH` / *"A record of things currently being designed, tested, and built."*
+- **Heading:** `04 — THE WORKBENCH` / *"A record of things currently being designed, tested, and built."*
 - **Composition:** Asymmetric 12-column engineering workbench:
-  - **Slot 01 (Cols 1–7, Rows 1–3):** Vector Blueprint Calibration Plate. Displays interactive measurement calipers, coordinate rings, and dynamic token telemetry.
-  - **Slot 02 (Cols 8–12):** *Local Model Inference Engine* (Testing quantized small models on consumer hardware).
-  - **Slot 03 (Cols 8–12):** *Autonomous Agent Perception Boundary* (DOM tree inspection & prompt injection defense).
-  - **Slot 04 (Cols 1–6):** *Kinematic Motion Algorithms* (Mathematical scroll-coupling in web viewports).
-  - **Slot 05 (Cols 7–12):** *High-Throughput Verification Pipelines* (AST diff analysis and mutation testing).
+  - **Slot 01 (Cols 1–7, Rows 1–3):** Vector Blueprint Calibration Plate (`Fig. 03`). Displays interactive measurement calipers, coordinate rings, and dynamic token telemetry.
+  - **Slot 02 (Cols 8–12):** *Local Model Inference Engine* (Quantized small models on consumer hardware). Badge: `RESEARCH FOCUS`.
+  - **Slot 03 (Cols 8–12):** *Autonomous Agent Perception Boundary* (DOM tree inspection & injection defense). Badge: `ACTIVE STUDY`.
+  - **Slot 04 (Cols 1–6):** *Kinematic Motion Algorithms* (Mathematical scroll-coupling in web viewports). Badge: `EXPLORATION`.
+  - **Slot 05 (Cols 7–12):** *High-Throughput Verification Pipelines* (AST diff analysis and mutation testing). Badge: `INVESTIGATION`.
 
-### Section 05 — The Collection
+### Stage 05 — The Collection: The Visual Diary (`#collection`)
 - **Canvas:** Archive Paper (`#EAE7DF`).
-- **Heading:** `04 — THE COLLECTION` / *"Objects, influences, motorsports & mechanical curiosities."*
-- **Four Curated Divisions:**
-  - `A · Machines` (Motorsport telemetry, Formula 1 suspension geometry, Porsche engineering)
-  - `B · Visual Culture` (Swiss typographic posters, brutalist architectural monographs)
-  - `C · Objects` (Precision industrial design, Dieter Rams artifacts, mechanical chronographs)
-  - `D · Curiosities` (Optical refraction, computing history, unusual physical mechanisms)
-- **The Kinematic Mechanical Wheel (`#wheel` & `#track`):**
+- **Heading:** `05 — THE COLLECTION` / *"Objects, influences, motorsports & mechanical curiosities."*
+- **Asymmetrical Scrapbook Layout:**
+  - *Plate A · Machines (3:2):* Wide horizontal plate anchored top left (Cols 1–8).
+  - *Plate B · Visual Culture (4:5):* Vertical poster pushed down 140px on the right (Cols 10–12).
+  - *Plate C · Objects (1:1):* Overhead industrial design square overlapping boundary (Cols 2–6, `margin-top: -30px`).
+  - *Plate D · Curiosities (3:2):* Off-center tactile plate (Cols 7–12, `margin-top: 70px`).
+- **The Kinematic Rolling Wheel (`#wheel` & `#track`):**
   - Guide track across baseline with milestone ticks at 0%, 33%, 66%, 100%.
   - SVG wheel rolls across track with rotation bound to linear travel: $\theta = \frac{x}{R} \cdot \frac{180}{\pi}$.
   - Passing milestone markers illuminates the corresponding collection category.
 
-### Section 06 — The Human
+### Stage 06 — The Human: A Closer Look (`#personality`)
 - **Canvas:** Foundry Black (`#111110`).
-- **Heading:** `05 — THE HUMAN RECORD` / *"Curious by default. A builder by instinct."*
+- **Heading:** `06 — THE HUMAN RECORD` / *"Curious by default. A builder by instinct."*
 - **Content:**
-  - Left: 4:5 environmental portrait of Sreeshanth Namireddy (`Fig. 02 — Observer`) with scroll clip-path reveal.
-  - Right: Concise biographical essay detailing how the precision of motorsports and mechanical systems informs his approach to resilient software engineering.
+  - Left (Cols 1–6): Candid workshop portrait of Sreeshanth Namireddy (`Fig. 02 — Observer`) with scroll clip-path reveal.
+  - Right (Cols 7–12): Thoughtful biographical monograph detailing how motorsport discipline informs software reliability.
   - Baseline: The Monolithic Five typographic ribbon:
     $$\text{BUILD}\quad\text{EXPLORE}\quad\text{QUESTION}\quad\text{EXPERIMENT}\quad\text{REPEAT}$$
+    Alternating words colored in Signal Red, scrubbed upward on scroll.
 
-### Section 07 — Transmission (Contact & Colophon)
+### Stage 07 — Transmission: The End (`#contact`)
 - **Canvas:** Foundry Black (`#111110`).
-- **Heading:** *"HAVE SOMETHING INTERESTING IN MIND? Let's make something that shouldn't exist yet."*
-- **Verified Transmission Channels:**
-  - Verified Email: `sreeshanth.namireddy@gmail.com` with magnetic pull.
-  - Outbound Channels: `GITHUB ↗` (`github.com/SreeshanthNamireddy`), `LINKEDIN ↗` (`linkedin.com/in/sreeshanth-namireddy`).
-  - Zero placeholder text (`[ verified email ... ]` completely eliminated).
-- **The Continuous Laser Road:** 1px horizontal rule with a red laser orb animating infinitely across the screen.
-- **Colophon:**
-  - *THE NINTH FOUNDRY · AN ARCHIVE OF BECOMING.*
-  - *INDEPENDENTLY BUILT. CONTINUOUSLY EVOLVING.*
-  - *© 2026 · [BACK TO TOP ↑]*
-
+- **Heading:** `07 — TRANSMISSION` / *"Have something interesting in mind?"*
+- **Content:**
+  - Subtitle: *"Let's make something that shouldn't exist yet."*
+  - Verified Email: `namireddysreeshanth@gmail.com` (Interactive magnetic hover).
+  - Verified Code Repository: `github.com/theninthfoundry`.
+  - The Laser Road: A continuous 1px line with a Signal Red orb animating horizontally in an infinite loop, signifying active transmission.
+  - Colophon: `HYDERABAD, INDIA · 2026 EDITION · ZERO FRAMEWORKS`.
