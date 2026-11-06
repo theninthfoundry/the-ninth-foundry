@@ -3,55 +3,44 @@
 **Builder & Subject:** Sreeshanth Namireddy  
 **Location:** Hyderabad, India  
 **System Architecture:** Lightweight Static Web Application (HTML5 / Vanilla CSS3 / Modern ES6 / GSAP 3.12.5)  
-**Hosting Target:** GitHub Pages (`https://theninthfoundry.github.io/the-ninth-foundry/`)
+**Hosting Target:** GitHub Pages (`https://theninthfoundry.github.io/the-ninth-foundry/`)  
+**Creative Doctrine Version:** Phase 02.5 — The Beauty of the Unfinished
 
 ---
 
-## 1. Core Creative Doctrine & Identity
+## 1. Core Creative Doctrine: Controlled Imperfection
 
-The Ninth Foundry is an independent digital archive documenting the process of becoming an engineer, researcher, and builder. It is not an ordinary developer portfolio, nor is it a generic tech landing page.
+The Ninth Foundry is not a digital museum, nor is it a sterile developer portfolio. It is an extraordinary creative world translating the mind, engineering, curiosities, and obsessions of an independent builder into an asymmetrical digital space.
 
-### The Ratio:
-- **65% Editorial & Human:** High-contrast portraiture, thoughtful typography, authentic personal philosophy, and clear technical writing.
-- **20% Mechanical & Automotive:** Motorsports discipline, mechanical kinematics, physical wheel mechanisms, and calibration aesthetics.
-- **15% Experimental Technology:** Shader displacement, behavioural software verification, and intelligent agent perception.
+### The Defining Philosophy:
+- **Stop Designing Everything to Line Up:** Symmetrical grids, identical cards, and uniform spacing are strictly prohibited. Visual imbalance is an active, primary aesthetic choice.
+- **The First Screen Says Very Little:** The hero is an art-directed composition designed to provoke curiosity, not an exhaustive summary. The name is treated as an oversized visual object; the narrative unfolds progressively as the visitor travels deeper.
+- **Radical Contrast Across Sections:**
+  - *Hero & Collection:* Visually outrageous, expressive, photographic, and unpredictable.
+  - *Selected Work:* Editorial, structured, and technically credible.
+  - *The Human:* Intimate, conversational, vulnerable, and reflective.
 
-### Strict Design & Engineering Prohibitions:
-1. **No Artificial Loading Screens:** Never force the user to wait for simulated 0%–100% timers. Keep reveals fast, vector-driven, and purposeful.
-2. **No Placeholder Scaffolding in Production:** Never expose bracketed strings like `[ verified email — add in js/data.js ]`, `GitHub — to supply`, or `Date — add`.
-3. **No Closed Cyclical Navigation Loops:** Project cards must never link cyclically to `#archive`, nor may archive rows link back to `#work`. Every interactive element must lead to a real destination.
-4. **No Fabricated Content:** Never invent metrics, testimonials, awards, unwritten articles, or unverified achievements.
-5. **No Framework Churn:** Do not introduce React, Next.js, Tailwind, or complex build tools. Maintain the lightweight, zero-build static architecture that loads in milliseconds.
-
----
-
-## 2. Coding & Design Standards
-
-### Typography:
-- **Display & Headings:** `Instrument Serif` (Italics used for emotional emphasis: `<i>decides to build it.</i>`).
-- **Body & Interface:** `Geist` (Light 300, Regular 400).
-- **Metadata & Telemetry:** `IBM Plex Mono` (Uppercase, tracked `0.12em`).
-
-### Palette:
-- **Foundry Black:** `#111110` (Primary dark canvas)
-- **Archive Paper:** `#EAE7DF` (Primary light canvas)
-- **Ivory White:** `#F8F7F3` (High-contrast typography)
-- **Charcoal Ink:** `#171715` (Paper typography)
-- **Signal Red:** `#C83D32` (Selective functional accent — never used as a generic background)
-- **Laboratory Green:** `#B9C77A` (Availability beacon & active terminal telemetry)
-
-### Motion Guidelines:
-- Primary animation engine: **GSAP 3.12.5 + ScrollTrigger**.
-- Use `transform` (`x`, `y`, `scale`) and `opacity` exclusively for animations to guarantee 60fps GPU acceleration.
-- Always support `prefers-reduced-motion: reduce`.
-- Ensure all GSAP timelines and event listeners are scope-managed and cleaned up correctly.
+### The Tripartite Creative Ratio:
+- **65% Editorial & Human:** Brutalist magazine spreads, high-contrast portraiture, scan textures, and personal observations.
+- **20% Mechanical & Automotive:** Motorsports engineering, titanium kinematics, Formula 1 suspension geometry, and physical instruments.
+- **15% Experimental Technology:** Software verification architectures, browser security boundaries, and generative visual algorithms.
 
 ---
 
-## 3. Project Skills
+## 2. Strict Design & Engineering Prohibitions
 
-The project is governed by three dedicated Antigravity skills located in `.agents/skills/`:
-1. `portfolio-art-direction` — Spatial composition, typography scales, palette management, and editorial hierarchy.
-2. `interaction-engineering` — GSAP timelines, kinematic mechanics, SVG shaders, and cursor physics.
-3. `visual-qa` — Multi-viewport responsive audit, accessibility verification, and zero-defect quality enforcement.
+1. **No Artificial Loading Screens:** Never force simulated timers (0%–100%). Keep reveals fast (under 1.1s), vector-drawn, and purposeful.
+2. **No Placeholder Scaffolding in Production:** Zero bracketed strings (`[ verified email ... ]`, `to supply`, `Date — add`, `Unpublished`).
+3. **No Symmetrical Uniformity:** Never place projects in identical repeating boxes. Every featured project must have its own distinct physical presence on the page.
+4. **No Closed Cyclical Navigation Loops:** Every interactive element must lead to a verified target (GitHub repository, live system, or case file).
+5. **No Fabricated Content:** Never invent metrics, testimonials, awards, unwritten articles, or unverified achievements.
+6. **No Framework Churn:** Maintain the zero-build static architecture (semantic HTML, CSS variables, vanilla ES6, GSAP 3 via CDN) that loads in milliseconds.
 
+---
+
+## 3. Persistent Project Skills
+
+The project is governed by three dedicated Antigravity skills in `.agents/skills/`:
+1. `portfolio-art-direction` — Radical asymmetry, controlled imperfection, oversized typography bleed, and negative space management.
+2. `interaction-engineering` — GSAP ScrollTrigger timelines, kinematic physics, non-linear drift, and shader lifecycle.
+3. `visual-qa` — Multi-viewport responsive verification, intentional vs. accidental asymmetry audits, and zero-defect QA.
