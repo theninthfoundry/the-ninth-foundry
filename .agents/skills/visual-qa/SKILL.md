@@ -1,34 +1,33 @@
 ---
 name: visual-qa
-description: Responsive viewport verification, accessibility compliance, content authenticity, and zero-defect QA.
+description: Responsive viewport verification, intentional vs accidental asymmetry audits, accessibility compliance, and zero-defect QA.
 ---
 
-# Visual QA Skill
+# Visual QA Skill (Phase 02.5 — The Beauty of the Unfinished)
 
-Use this skill before approving any change, merging pull requests, or deploying updates to ensure strict design standards, responsive stability, and zero content defects.
+Use this skill to audit responsive stability, verify intentional asymmetry, validate accessibility, and enforce strict content authenticity.
 
-## Responsibilities
-1. Inspect the visual presentation across standard testing viewports:
+## Core Directives
+1. **Differentiate Intentional Asymmetry from Accidental Breakage:**
+   - Intentional typography bleed (e.g. hero name extending slightly off-screen) must NOT cause horizontal viewport scrollbars on the `<body>` or `<html>` element (`overflow-x: hidden`).
+   - Off-grid visual overlays must preserve legibility of all essential text.
+2. **Multi-Viewport Responsive Audits:**
    - `1440 × 900` (Standard Desktop)
    - `1280 × 800` (Compact Laptop)
-   - `1024 × 768` (Small Desktop / Landscape Tablet)
+   - `1024 × 768` (Landscape Tablet)
    - `768 × 1024` (Portrait Tablet)
-   - `390 × 844` (Modern Mobile / iPhone)
-   - `360 × 800` (Narrow Mobile / Android)
-2. Detect and eliminate horizontal scrolling, text clipping, and overlapping fixed elements.
-3. Validate accessibility standards (WCAG 2.1 AA contrast, keyboard `:focus-visible`, dialog focus trapping).
-4. Guard content credibility: purge all placeholders, bracketed strings, unwritten articles, and cyclical anchor loops.
-
-## Process
-1. **Automated Inspection:** Launch local preview and inspect DOM tree, console logs, and network tab for 404s or uncaught errors.
-2. **Multi-Viewport Audit:** Check typography scaling at extreme viewports (especially 360px width) to verify headline wrapping without overflow.
-3. **Link & Loop Verification:** Click every link, card, and row to verify that destination URLs resolve to genuine targets.
-4. **Scaffolding Sweep:** Run a regex search for `[`, `to verify`, `to supply`, `add date`, or `unpublished` across all public-facing text.
+   - `390 × 844` (Mobile Standard)
+   - `360 × 800` (Narrow Mobile)
+3. **Guard Content Authenticity:**
+   - Purge all bracketed scaffolding strings, "to supply" labels, unverified dates, and unwritten articles.
+   - Verify that all project links and archive rows point to genuine, live destinations.
+4. **Enforce WCAG AA Compliance:**
+   - Minimum 4.5:1 contrast for body copy; 3:1 for large display titles.
+   - Visible 2px Signal Red focus outlines (`:focus-visible`).
+   - Accessible keyboard dismissal (`Escape`) for mobile navigation and index drawers.
 
 ## Quality Checklist
-- [ ] Zero console errors or unhandled exceptions.
-- [ ] No horizontal viewport overflow at any breakpoint.
-- [ ] Bottom HUD telemetry does not collide on mobile screens.
-- [ ] All keyboard focus outlines are visible with 2px Signal Red highlight.
-- [ ] All external links open in a new tab with `rel="noopener noreferrer"`.
-
+- [ ] Zero unhandled JavaScript errors in browser console.
+- [ ] No unwanted horizontal scrollbar across all 6 test viewports.
+- [ ] Bottom HUD telemetry does not overlap on narrow mobile viewports.
+- [ ] Tap targets on touch devices maintain minimum 44 × 44 px bounding box.
